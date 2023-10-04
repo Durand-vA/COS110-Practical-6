@@ -1,0 +1,1755 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/main.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/main.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include <sstream>
+        -:    3:#include "item.h"
+        -:    4:#include "product.h"
+        -:    5:#include "service.h"
+        -:    6:#include "bulk.h"
+        -:    7:#include "discountedProduct.h"
+        -:    8:#include "subscription.h"
+        -:    9:#include "labor.h"
+        -:   10:#include "shop.h"
+        -:   11:
+function _Z11productTestv called 1 returned 100% blocks executed 48%
+        1:   12:void productTest() {
+        2:   13:    product product1("item1", 13, 10, 30);
+        1:   13-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   13-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   13-block  2
+call    7 returned 1
+    $$$$$:   13-block  3
+    $$$$$:   13-block  4
+        2:   14:    product product2("item2", 432, 15, 5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   14-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   14-block  1
+call    7 returned 1
+    $$$$$:   14-block  2
+    $$$$$:   14-block  3
+        2:   15:    product product3("item3", 2495, 1, 2300);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   15-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   15-block  1
+call    7 returned 1
+    $$$$$:   15-block  2
+    $$$$$:   15-block  3
+        2:   16:    product product4("item4", 36, 100, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   16-block  1
+call    7 returned 1
+    $$$$$:   16-block  2
+    $$$$$:   16-block  3
+        -:   17:
+        2:   18:    std::cout << product1.getName() << ": " << product1.getBarcode() << '\n'
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   18-block  1
+call    6 never executed
+    $$$$$:   18-block  2
+    $$$$$:   18-block  3
+call    7 never executed
+    $$$$$:   18-block  4
+        1:   19:              << product1.getName() << ": " << product2.getBarcode() << '\n'
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   19-block  2
+call    6 never executed
+    $$$$$:   19-block  3
+    $$$$$:   19-block  4
+call    7 never executed
+    $$$$$:   19-block  5
+        1:   20:              << product1.getName() << ": " << product3.getBarcode() << '\n'
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   20-block  2
+call    6 never executed
+    $$$$$:   20-block  3
+    $$$$$:   20-block  4
+call    7 never executed
+    $$$$$:   20-block  5
+        1:   21:              << product1.getName() << ": " << product4.getBarcode() << std::endl;
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   21-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   21-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   21-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   21-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   21-block  6
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   21-block  7
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   21-block  8
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   21-block  9
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   21-block 10
+call   30 returned 1
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0 (throw)
+        1:   21-block 11
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   21-block 12
+call   36 returned 1
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0 (throw)
+        1:   21-block 13
+call   39 returned 1
+branch 40 taken 1 (fallthrough)
+branch 41 taken 0 (throw)
+        1:   21-block 14
+call   42 returned 1
+branch 43 taken 1 (fallthrough)
+branch 44 taken 0 (throw)
+        1:   21-block 15
+call   45 returned 1
+branch 46 taken 1 (fallthrough)
+branch 47 taken 0 (throw)
+        1:   21-block 16
+call   48 returned 1
+branch 49 taken 1 (fallthrough)
+branch 50 taken 0 (throw)
+        1:   21-block 17
+call   51 returned 1
+branch 52 taken 1 (fallthrough)
+branch 53 taken 0 (throw)
+        1:   21-block 18
+call   54 returned 1
+branch 55 taken 1 (fallthrough)
+branch 56 taken 0 (throw)
+        1:   21-block 19
+call   57 returned 1
+branch 58 taken 1 (fallthrough)
+branch 59 taken 0 (throw)
+        1:   21-block 20
+call   60 returned 1
+branch 61 taken 1 (fallthrough)
+branch 62 taken 0 (throw)
+        1:   21-block 21
+call   63 returned 1
+branch 64 taken 1 (fallthrough)
+branch 65 taken 0 (throw)
+        1:   21-block 22
+call   66 returned 1
+branch 67 taken 1 (fallthrough)
+branch 68 taken 0 (throw)
+        1:   21-block 23
+call   69 returned 1
+branch 70 taken 1 (fallthrough)
+branch 71 taken 0 (throw)
+        1:   21-block 24
+call   72 returned 1
+branch 73 taken 1 (fallthrough)
+branch 74 taken 0 (throw)
+        1:   21-block 25
+call   75 returned 1
+branch 76 taken 1 (fallthrough)
+branch 77 taken 0 (throw)
+    $$$$$:   21-block 26
+call   78 never executed
+    $$$$$:   21-block 27
+    $$$$$:   21-block 28
+call   79 never executed
+    $$$$$:   21-block 29
+        -:   22:
+        1:   23:    product1.print();
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    product2.print();
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25:    product3.print();
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   26:    product4.print();
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   27:
+        1:   28:    product1.buy("5");
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   28-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   28-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   28-block  3
+call   10 returned 1
+    $$$$$:   28-block  4
+call   11 never executed
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+call   12 never executed
+    $$$$$:   28-block  7
+        1:   29:    product2.buy("10");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   29-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   29-block  2
+call   10 returned 1
+    $$$$$:   29-block  3
+call   11 never executed
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+call   12 never executed
+    $$$$$:   29-block  6
+        1:   30:    product3.buy("-1");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   30-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   30-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   30-block  2
+call   10 returned 1
+    $$$$$:   30-block  3
+call   11 never executed
+    $$$$$:   30-block  4
+    $$$$$:   30-block  5
+call   12 never executed
+    $$$$$:   30-block  6
+        1:   31:    product4.buy("0");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   31-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   31-block  2
+call   10 returned 1
+    $$$$$:   31-block  3
+call   11 never executed
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+call   12 never executed
+    $$$$$:   31-block  6
+        -:   32:
+        1:   33:    item* product5 = new product("item5", 36, 100, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   33-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   33-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   33-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   33-block  3
+call   13 returned 1
+    $$$$$:   33-block  4
+call   14 never executed
+    $$$$$:   33-block  5
+call   15 never executed
+    $$$$$:   33-block  6
+    $$$$$:   33-block  7
+call   16 never executed
+    $$$$$:   33-block  8
+        -:   34:
+        1:   35:    item** arr = new item*[1];
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:    arr[0] = product5;
+        1:   37:    delete arr[0];
+        1:   37-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   37-block  1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   37-block  2
+call    5 returned 1
+    $$$$$:   37-block  3
+call    6 never executed
+        -:   38:
+        1:   39:}
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   39-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   39-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   39-block  4
+    $$$$$:   39-block  5
+call   12 never executed
+    $$$$$:   39-block  6
+call   13 never executed
+    $$$$$:   39-block  7
+call   14 never executed
+    $$$$$:   39-block  8
+call   15 never executed
+    $$$$$:   39-block  9
+call   16 never executed
+    $$$$$:   39-block 10
+call   17 never executed
+    $$$$$:   39-block 11
+call   18 never executed
+    $$$$$:   39-block 12
+call   19 never executed
+        -:   40:
+function _Z11serviceTestv called 1 returned 100% blocks executed 44%
+        1:   41:void serviceTest() {
+        2:   42:    service service1("service1", 13, 10, 'h');
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   42-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   42-block  2
+call    7 returned 1
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+        2:   43:    service service2("service1", 13, 14, 'd');
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   43-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   43-block  1
+call    7 returned 1
+    $$$$$:   43-block  2
+    $$$$$:   43-block  3
+        2:   44:    service service3("service2", 432, 15, 'w');
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   44-block  1
+call    7 returned 1
+    $$$$$:   44-block  2
+    $$$$$:   44-block  3
+        2:   45:    service service4("service3", 2495, 100, 'm');
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   45-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   45-block  1
+call    7 returned 1
+    $$$$$:   45-block  2
+    $$$$$:   45-block  3
+        2:   46:    service service5("service4", 36, 100, 'y');
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   46-block  1
+call    7 returned 1
+    $$$$$:   46-block  2
+    $$$$$:   46-block  3
+        -:   47:
+        1:   48:    service1.print();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49:    service2.print();
+        1:   49-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50:    service3.print();
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51:    service4.print();
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52:    service5.print();
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   53:
+        1:   54:    service1.buy("5 h");
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   54-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   54-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   54-block  3
+call   10 returned 1
+    $$$$$:   54-block  4
+call   11 never executed
+    $$$$$:   54-block  5
+    $$$$$:   54-block  6
+call   12 never executed
+    $$$$$:   54-block  7
+        1:   55:    service2.buy("10 w");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   55-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   55-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   55-block  2
+call   10 returned 1
+    $$$$$:   55-block  3
+call   11 never executed
+    $$$$$:   55-block  4
+    $$$$$:   55-block  5
+call   12 never executed
+    $$$$$:   55-block  6
+        1:   56:    service3.buy("-1 d");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   56-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   56-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   56-block  2
+call   10 returned 1
+    $$$$$:   56-block  3
+call   11 never executed
+    $$$$$:   56-block  4
+    $$$$$:   56-block  5
+call   12 never executed
+    $$$$$:   56-block  6
+        1:   57:    service4.buy("0 m");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   57-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   57-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   57-block  2
+call   10 returned 1
+    $$$$$:   57-block  3
+call   11 never executed
+    $$$$$:   57-block  4
+    $$$$$:   57-block  5
+call   12 never executed
+    $$$$$:   57-block  6
+        1:   58:    service5.buy("10 y");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   58-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   58-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   58-block  2
+call   10 returned 1
+    $$$$$:   58-block  3
+call   11 never executed
+    $$$$$:   58-block  4
+    $$$$$:   58-block  5
+call   12 never executed
+    $$$$$:   58-block  6
+        1:   59:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   59-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   59-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   59-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   59-block  4
+    $$$$$:   59-block  5
+call   15 never executed
+    $$$$$:   59-block  6
+call   16 never executed
+    $$$$$:   59-block  7
+call   17 never executed
+    $$$$$:   59-block  8
+call   18 never executed
+    $$$$$:   59-block  9
+call   19 never executed
+    $$$$$:   59-block 10
+call   20 never executed
+    $$$$$:   59-block 11
+call   21 never executed
+    $$$$$:   59-block 12
+call   22 never executed
+    $$$$$:   59-block 13
+call   23 never executed
+    $$$$$:   59-block 14
+call   24 never executed
+        -:   60:
+function _Z8bulkTestv called 1 returned 100% blocks executed 44%
+        1:   61:void bulkTest() {
+        2:   62:    bulk bulk1("bulk1", 13, 10, 30, 0.1, 5);
+        1:   62-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   62-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   62-block  2
+call    7 returned 1
+    $$$$$:   62-block  3
+    $$$$$:   62-block  4
+        2:   63:    bulk bulk2("bulk2", 432, 15, 5, 0.2, 2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   63-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   63-block  1
+call    7 returned 1
+    $$$$$:   63-block  2
+    $$$$$:   63-block  3
+        2:   64:    bulk bulk3("bulk3", 2495, 1, 2300, 0.3, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   64-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   64-block  1
+call    7 returned 1
+    $$$$$:   64-block  2
+    $$$$$:   64-block  3
+        2:   65:    bulk bulk4("bulk4", 36, 100, 1, 0.4, 10);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   65-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   65-block  1
+call    7 returned 1
+    $$$$$:   65-block  2
+    $$$$$:   65-block  3
+        -:   66:
+        1:   67:    bulk1.print();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68:    bulk2.print();
+        1:   68-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   69:    bulk3.print();
+        1:   69-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   70:    bulk4.print();
+        1:   70-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   71:
+        1:   72:    bulk1.buy("5");
+        1:   72-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   72-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   72-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   72-block  3
+call   10 returned 1
+    $$$$$:   72-block  4
+call   11 never executed
+    $$$$$:   72-block  5
+    $$$$$:   72-block  6
+call   12 never executed
+    $$$$$:   72-block  7
+        1:   73:    bulk2.buy("10");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   73-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   73-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   73-block  2
+call   10 returned 1
+    $$$$$:   73-block  3
+call   11 never executed
+    $$$$$:   73-block  4
+    $$$$$:   73-block  5
+call   12 never executed
+    $$$$$:   73-block  6
+        1:   74:    bulk3.buy("-1");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   74-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   74-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   74-block  2
+call   10 returned 1
+    $$$$$:   74-block  3
+call   11 never executed
+    $$$$$:   74-block  4
+    $$$$$:   74-block  5
+call   12 never executed
+    $$$$$:   74-block  6
+        1:   75:    bulk4.buy("0");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   75-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   75-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   75-block  2
+call   10 returned 1
+    $$$$$:   75-block  3
+call   11 never executed
+    $$$$$:   75-block  4
+    $$$$$:   75-block  5
+call   12 never executed
+    $$$$$:   75-block  6
+        1:   76:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   76-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   76-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   76-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   76-block  3
+    $$$$$:   76-block  4
+call   12 never executed
+    $$$$$:   76-block  5
+call   13 never executed
+    $$$$$:   76-block  6
+call   14 never executed
+    $$$$$:   76-block  7
+call   15 never executed
+    $$$$$:   76-block  8
+call   16 never executed
+    $$$$$:   76-block  9
+call   17 never executed
+    $$$$$:   76-block 10
+call   18 never executed
+    $$$$$:   76-block 11
+call   19 never executed
+        -:   77:
+function _Z21discountedProductTestv called 1 returned 100% blocks executed 44%
+        1:   78:void discountedProductTest() {
+        2:   79:    discountedProduct disc1("disc1", 13, 10, 30, 0.1);
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   79-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   79-block  2
+call    7 returned 1
+    $$$$$:   79-block  3
+    $$$$$:   79-block  4
+        2:   80:    discountedProduct disc2("disc2", 432, 15, 5, 0.2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   80-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   80-block  1
+call    7 returned 1
+    $$$$$:   80-block  2
+    $$$$$:   80-block  3
+        2:   81:    discountedProduct disc3("disc3", 2495, 1, 2300, 0.3);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   81-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   81-block  1
+call    7 returned 1
+    $$$$$:   81-block  2
+    $$$$$:   81-block  3
+        2:   82:    discountedProduct disc4("disc4", 36, 100, 1, 0.4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   82-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   82-block  1
+call    7 returned 1
+    $$$$$:   82-block  2
+    $$$$$:   82-block  3
+        -:   83:
+        1:   84:    disc1.print();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85:    disc2.print();
+        1:   85-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86:    disc3.print();
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87:    disc4.print();
+        1:   87-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   88:
+        1:   89:    disc1.buy("5");
+        1:   89-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   89-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   89-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   89-block  3
+call   10 returned 1
+    $$$$$:   89-block  4
+call   11 never executed
+    $$$$$:   89-block  5
+    $$$$$:   89-block  6
+call   12 never executed
+    $$$$$:   89-block  7
+        1:   90:    disc2.buy("10");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   90-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   90-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   90-block  2
+call   10 returned 1
+    $$$$$:   90-block  3
+call   11 never executed
+    $$$$$:   90-block  4
+    $$$$$:   90-block  5
+call   12 never executed
+    $$$$$:   90-block  6
+        1:   91:    disc3.buy("-1");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   91-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   91-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   91-block  2
+call   10 returned 1
+    $$$$$:   91-block  3
+call   11 never executed
+    $$$$$:   91-block  4
+    $$$$$:   91-block  5
+call   12 never executed
+    $$$$$:   91-block  6
+        1:   92:    disc4.buy("0");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   92-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   92-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   92-block  2
+call   10 returned 1
+    $$$$$:   92-block  3
+call   11 never executed
+    $$$$$:   92-block  4
+    $$$$$:   92-block  5
+call   12 never executed
+    $$$$$:   92-block  6
+        1:   93:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   93-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   93-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   93-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   93-block  3
+    $$$$$:   93-block  4
+call   12 never executed
+    $$$$$:   93-block  5
+call   13 never executed
+    $$$$$:   93-block  6
+call   14 never executed
+    $$$$$:   93-block  7
+call   15 never executed
+    $$$$$:   93-block  8
+call   16 never executed
+    $$$$$:   93-block  9
+call   17 never executed
+    $$$$$:   93-block 10
+call   18 never executed
+    $$$$$:   93-block 11
+call   19 never executed
+        -:   94:
+function _Z9laborTestv called 1 returned 100% blocks executed 46%
+        1:   95:void laborTest() {
+        1:   96:    int** workers = new int*[5];
+        1:   96-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   97:    for (int i = 0; i < 5; i++) {
+        1:   97-block  0
+        5:   97-block  1
+        6:   97-block  2
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        5:   98:        workers[i] = new int[4];
+        5:   98-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+       25:   99:        for (int j = 0; j < 4; j++) {
+        5:   99-block  0
+       25:   99-block  1
+branch  0 taken 20
+branch  1 taken 5 (fallthrough)
+       20:  100:            workers[i][j] = i*j;
+       20:  100-block  0
+        -:  101:        }
+        -:  102:    }
+        2:  103:    labor labor1("labor1", 13, 10, 'y', workers[0], 4);
+        1:  103-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  103-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  103-block  2
+call    7 returned 1
+    $$$$$:  103-block  3
+    $$$$$:  103-block  4
+        2:  104:    labor labor2("labor2", 432, 15, 'm', workers[1], 4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  104-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  104-block  1
+call    7 returned 1
+    $$$$$:  104-block  2
+    $$$$$:  104-block  3
+        2:  105:    labor labor3("labor3", 2495, 1, 'd', workers[2], 4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  105-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  105-block  1
+call    7 returned 1
+    $$$$$:  105-block  2
+    $$$$$:  105-block  3
+        2:  106:    labor labor4("labor4", 36, 100, 'w', workers[3], 4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  106-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  106-block  1
+call    7 returned 1
+    $$$$$:  106-block  2
+    $$$$$:  106-block  3
+        2:  107:    labor labor5("labor5", 1, 20, 'h', workers[4], 4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  107-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  107-block  1
+call    7 returned 1
+    $$$$$:  107-block  2
+    $$$$$:  107-block  3
+        -:  108:
+        1:  109:    labor1.print();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  110:    labor2.print();
+        1:  110-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  111:    labor3.print();
+        1:  111-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  112:    labor4.print();
+        1:  112-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  113:
+        1:  114:    labor1.buy("5 h");
+        1:  114-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  114-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  114-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  114-block  3
+call   10 returned 1
+    $$$$$:  114-block  4
+call   11 never executed
+    $$$$$:  114-block  5
+    $$$$$:  114-block  6
+call   12 never executed
+    $$$$$:  114-block  7
+        1:  115:    labor2.buy("10 w");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  115-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  115-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  115-block  2
+call   10 returned 1
+    $$$$$:  115-block  3
+call   11 never executed
+    $$$$$:  115-block  4
+    $$$$$:  115-block  5
+call   12 never executed
+    $$$$$:  115-block  6
+        1:  116:    labor3.buy("-1 d");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  116-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  116-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  116-block  2
+call   10 returned 1
+    $$$$$:  116-block  3
+call   11 never executed
+    $$$$$:  116-block  4
+    $$$$$:  116-block  5
+call   12 never executed
+    $$$$$:  116-block  6
+        1:  117:    labor4.buy("0 m");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  117-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  117-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  117-block  2
+call   10 returned 1
+    $$$$$:  117-block  3
+call   11 never executed
+    $$$$$:  117-block  4
+    $$$$$:  117-block  5
+call   12 never executed
+    $$$$$:  117-block  6
+        1:  118:    labor5.buy("10 y");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  118-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  118-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  118-block  2
+call   10 returned 1
+    $$$$$:  118-block  3
+call   11 never executed
+    $$$$$:  118-block  4
+    $$$$$:  118-block  5
+call   12 never executed
+    $$$$$:  118-block  6
+        1:  119:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  119-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  119-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  119-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  119-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  119-block  4
+    $$$$$:  119-block  5
+call   15 never executed
+    $$$$$:  119-block  6
+call   16 never executed
+    $$$$$:  119-block  7
+call   17 never executed
+    $$$$$:  119-block  8
+call   18 never executed
+    $$$$$:  119-block  9
+call   19 never executed
+    $$$$$:  119-block 10
+call   20 never executed
+    $$$$$:  119-block 11
+call   21 never executed
+    $$$$$:  119-block 12
+call   22 never executed
+    $$$$$:  119-block 13
+call   23 never executed
+    $$$$$:  119-block 14
+call   24 never executed
+        -:  120:
+function _Z16subscriptionTestv called 1 returned 100% blocks executed 43%
+        1:  121:void subscriptionTest() {
+        2:  122:    subscription sub1("sub1", 13, 10, 'y', 0.1);
+        1:  122-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  122-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  122-block  2
+call    7 returned 1
+    $$$$$:  122-block  3
+    $$$$$:  122-block  4
+        2:  123:    subscription sub2("sub2", 432, 15, 'm', 0.5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  123-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  123-block  1
+call    7 returned 1
+    $$$$$:  123-block  2
+    $$$$$:  123-block  3
+        2:  124:    subscription sub3("sub3", 2495, 1, 'd', 0.2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  124-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  124-block  1
+call    7 returned 1
+    $$$$$:  124-block  2
+    $$$$$:  124-block  3
+        2:  125:    subscription sub4("sub4", 36, 100, 'w', 0.3);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  125-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  125-block  1
+call    7 returned 1
+    $$$$$:  125-block  2
+    $$$$$:  125-block  3
+        2:  126:    subscription sub5("sub5", 1, 20, 'h', 0.4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  126-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  126-block  1
+call    7 returned 1
+    $$$$$:  126-block  2
+    $$$$$:  126-block  3
+        -:  127:
+        1:  128:    sub1.print();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  129:    sub2.print();
+        1:  129-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  130:    sub3.print();
+        1:  130-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  131:    sub4.print();
+        1:  131-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  132:
+        1:  133:    sub1.buy("5 h");
+        1:  133-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  133-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  133-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  133-block  3
+call   10 returned 1
+    $$$$$:  133-block  4
+call   11 never executed
+    $$$$$:  133-block  5
+    $$$$$:  133-block  6
+call   12 never executed
+    $$$$$:  133-block  7
+        1:  134:    sub2.buy("10 w");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  134-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  134-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  134-block  2
+call   10 returned 1
+    $$$$$:  134-block  3
+call   11 never executed
+    $$$$$:  134-block  4
+    $$$$$:  134-block  5
+call   12 never executed
+    $$$$$:  134-block  6
+        1:  135:    sub3.buy("-1 d");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  135-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  135-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  135-block  2
+call   10 returned 1
+    $$$$$:  135-block  3
+call   11 never executed
+    $$$$$:  135-block  4
+    $$$$$:  135-block  5
+call   12 never executed
+    $$$$$:  135-block  6
+        1:  136:    sub4.buy("0 m");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  136-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  136-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  136-block  2
+call   10 returned 1
+    $$$$$:  136-block  3
+call   11 never executed
+    $$$$$:  136-block  4
+    $$$$$:  136-block  5
+call   12 never executed
+    $$$$$:  136-block  6
+        1:  137:    sub5.buy("10 y");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  137-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  137-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  137-block  2
+call   10 returned 1
+    $$$$$:  137-block  3
+call   11 never executed
+    $$$$$:  137-block  4
+    $$$$$:  137-block  5
+call   12 never executed
+    $$$$$:  137-block  6
+        1:  138:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  138-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  138-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  138-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  138-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  138-block  4
+    $$$$$:  138-block  5
+call   15 never executed
+    $$$$$:  138-block  6
+call   16 never executed
+    $$$$$:  138-block  7
+call   17 never executed
+    $$$$$:  138-block  8
+call   18 never executed
+    $$$$$:  138-block  9
+call   19 never executed
+    $$$$$:  138-block 10
+call   20 never executed
+    $$$$$:  138-block 11
+call   21 never executed
+    $$$$$:  138-block 12
+call   22 never executed
+    $$$$$:  138-block 13
+call   23 never executed
+    $$$$$:  138-block 14
+call   24 never executed
+        -:  139:
+function _Z8shopTestv called 1 returned 100% blocks executed 53%
+        1:  140:void shopTest() {
+        1:  141:    item* i1 = new product("prod1", 3, 10, 20);
+        1:  141-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  141-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  141-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  141-block  3
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  141-block  4
+call   13 returned 1
+    $$$$$:  141-block  5
+call   14 never executed
+    $$$$$:  141-block  6
+call   15 never executed
+    $$$$$:  141-block  7
+    $$$$$:  141-block  8
+call   16 never executed
+    $$$$$:  141-block  9
+        -:  142:
+        1:  143:    item** is = new item*[10];
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  144:
+        1:  145:    char cs[5] = {'h','d','w','m','y'};
+        -:  146:
+       11:  147:    for (int i = 0; i < 10; i++) {
+        1:  147-block  0
+       10:  147-block  1
+       11:  147-block  2
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:  148:        std::stringstream ss;
+       10:  148-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:  149:        ss << "service" << i;
+       10:  149-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:  149-block  1
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:  150:        is[i] = new service(ss.str(), (i+1)*13, (i+1)*22, cs[i%5]);
+       10:  150-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:  150-block  1
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:  150-block  2
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:  150-block  3
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+    $$$$$:  150-block  4
+call   12 never executed
+    $$$$$:  150-block  5
+call   13 never executed
+    $$$$$:  150-block  6
+       10:  151:    }
+       10:  151-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  151-block  1
+call    3 never executed
+        -:  152:
+        1:  153:    shop shop1;
+        1:  153-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  154:
+        1:  155:    shop1.addItem(i1);
+        1:  155-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  156:    shop1.addItem(i1);
+        1:  156-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  157:    shop1.addItems(is, 10);
+        1:  157-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  158:
+        1:  159:    shop1.buyItems("service1:10 h|prod1:5|service4:4 y|test:5|");
+        1:  159-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  159-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  159-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  159-block  3
+call   10 returned 1
+    $$$$$:  159-block  4
+call   11 never executed
+    $$$$$:  159-block  5
+    $$$$$:  159-block  6
+call   12 never executed
+    $$$$$:  159-block  7
+        -:  160:
+        1:  161:    shop1.printItems();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  162:
+        1:  163:    shop1.removeItem("service1");
+        1:  163-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  163-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  163-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  163-block  3
+call   10 returned 1
+    $$$$$:  163-block  4
+call   11 never executed
+    $$$$$:  163-block  5
+    $$$$$:  163-block  6
+call   12 never executed
+    $$$$$:  163-block  7
+        1:  164:    shop1.removeItem("service10");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  164-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  164-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  164-block  2
+call   10 returned 1
+    $$$$$:  164-block  3
+call   11 never executed
+    $$$$$:  164-block  4
+    $$$$$:  164-block  5
+call   12 never executed
+    $$$$$:  164-block  6
+        -:  165:
+        1:  166:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  166-block  0
+    $$$$$:  166-block  1
+call    3 never executed
+        -:  167:
+function main called 1 returned 100% blocks executed 100%
+        1:  168:int main() {
+        1:  169:    productTest();
+        1:  169-block  0
+call    0 returned 1
+        1:  170:    serviceTest();
+call    0 returned 1
+        1:  171:    bulkTest();
+call    0 returned 1
+        1:  172:    discountedProductTest();
+call    0 returned 1
+        1:  173:    laborTest();
+call    0 returned 1
+        1:  174:    subscriptionTest();
+call    0 returned 1
+        1:  175:    shopTest();
+call    0 returned 1
+        1:  176:    return 0;
+        -:  177:}

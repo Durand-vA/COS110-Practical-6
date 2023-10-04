@@ -1,0 +1,156 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/item.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/item.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/item.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "item.h"
+        -:    3:#include <sstream>
+        -:    4:
+function _ZN4itemC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi called 39 returned 100% blocks executed 92%
+       39:    5:item::item(std::string n, int bN) {
+       39:    5-block  0
+call    0 returned 39
+       39:    6:    name = n;
+call    0 returned 39
+branch  1 taken 39 (fallthrough)
+branch  2 taken 0 (throw)
+        -:    7:
+       39:    8:    int count = 0, temp = bN;
+        -:    9:
+      303:   10:    while (temp != 0) {
+       39:   10-block  0
+      303:   10-block  1
+branch  0 taken 264
+branch  1 taken 39 (fallthrough)
+      264:   11:        count++;
+      264:   12:        temp = temp >> 1;
+      264:   12-block  0
+        -:   13:    }
+        -:   14:
+       39:   15:    barcodeLength = count;
+       39:   16:    barcode = new bool[barcodeLength];
+       39:   16-block  0
+call    0 returned 39
+branch  1 taken 39 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   17:
+      303:   18:    for (int i = barcodeLength-1; i >= 0; i--) {
+       39:   18-block  0
+      303:   18-block  1
+branch  0 taken 264
+branch  1 taken 39 (fallthrough)
+      264:   19:        barcode[barcodeLength-(i+1)] = (bN >> i) % 2;
+      264:   19-block  0
+        -:   20:    }
+       39:   21:}
+       39:   21-block  0
+    $$$$$:   21-block  1
+call    0 never executed
+        -:   22:
+function _ZN4itemD2Ev called 39 returned 100% blocks executed 100%
+       39:   23:item::~item() {
+       39:   24:    if (barcode != NULL)
+       39:   24-block  0
+branch  0 taken 39 (fallthrough)
+branch  1 taken 0
+       39:   25:        delete [] barcode;
+       39:   25-block  0
+branch  0 taken 39 (fallthrough)
+branch  1 taken 0
+       39:   25-block  1
+call    2 returned 39
+       39:   26:}
+       39:   26-block  0
+call    0 returned 39
+branch  1 taken 39 (fallthrough)
+branch  2 taken 0 (throw)
+       39:   26-block  1
+        -:   27:
+function _ZN4item7getNameB5cxx11Ev called 117 returned 100% blocks executed 67%
+      117:   28:std::string item::getName() {
+      117:   29:    return name;
+      117:   29-block  0
+call    0 returned 117
+branch  1 taken 117 (fallthrough)
+branch  2 taken 0 (throw)
+      117:   29-block  1
+      117:   29-block  2
+    =====:   30:}
+    $$$$$:   30-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   30-block  1
+call    2 never executed
+        -:   31:
+function _ZN4item10getBarcodeB5cxx11Ev called 40 returned 100% blocks executed 79%
+       40:   32:std::string item::getBarcode() {
+       40:   33:    std::stringstream ss;
+       40:   33-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   34:
+       40:   35:    int n = 0;
+        -:   36:
+       40:   37:    ss << '[';
+       40:   37-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+      327:   38:    for (int i = 0; i < barcodeLength; i++) {
+       40:   38-block  0
+      287:   38-block  1
+      327:   38-block  2
+branch  0 taken 287
+branch  1 taken 40 (fallthrough)
+      287:   39:        bool bar = barcode[i];
+      287:   40:        n += bar;
+      287:   41:        if (i != barcodeLength - 1)
+      287:   41-block  0
+branch  0 taken 247 (fallthrough)
+branch  1 taken 40
+      247:   42:            n = n << 1;
+      247:   42-block  0
+      287:   43:        ss << (bar ? '|' : ' ');
+      287:   43-block  0
+branch  0 taken 165 (fallthrough)
+branch  1 taken 122
+      165:   43-block  1
+      122:   43-block  2
+      287:   43-block  3
+call    2 returned 287
+branch  3 taken 287 (fallthrough)
+branch  4 taken 0 (throw)
+        -:   44:    }
+       40:   45:    ss << "](" << n << ')';
+       40:   45-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+       40:   45-block  1
+call    3 returned 40
+branch  4 taken 40 (fallthrough)
+branch  5 taken 0 (throw)
+       40:   45-block  2
+call    6 returned 40
+branch  7 taken 40 (fallthrough)
+branch  8 taken 0 (throw)
+        -:   46:
+       80:   47:    return ss.str();
+       40:   47-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+       40:   47-block  1
+       40:   48:}
+       40:   48-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   48-block  1
+call    3 never executed
+    $$$$$:   48-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   48-block  3
+call    6 never executed

@@ -1,0 +1,241 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/product.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/product.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/product.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <sstream>
+        -:    2:#include <iostream>
+        -:    3:#include <iomanip>
+        -:    4:#include "product.h"
+        -:    5:/**
+        -:    6: * @brief Creates a product
+        -:    7: * @param n The name of the product
+        -:    8: * @param bNn The barcode number of the product
+        -:    9: * @param v The value of the product
+        -:   10: * @param a The amount of the product
+        -:   11: */
+function _ZN7productC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiii called 14 returned 100% blocks executed 71%
+       14:   12:product::product(std::string n, int bNn, int v, int a) : item(n, bNn) {
+       14:   12-block  0
+call    0 returned 14
+call    1 returned 14
+branch  2 taken 14 (fallthrough)
+branch  3 taken 0 (throw)
+       14:   12-block  1
+call    4 returned 14
+branch  5 taken 14 (fallthrough)
+branch  6 taken 0 (throw)
+    $$$$$:   12-block  2
+call    7 never executed
+       14:   13:    value = v;
+       14:   14:    amount = a;
+       14:   15:}
+       14:   15-block  0
+        -:   16:
+function _ZN7productD2Ev called 12 returned 100% blocks executed 100%
+       12:   17:product::~product() {
+        -:   18:
+       12:   19:}
+       12:   19-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:   19-block  1
+        -:   20:/**
+        -:   21: * @brief Buys a product
+        -:   22: * @param s The amount to buy, will be a positive integer
+        -:   23: */
+function _ZN7product3buyENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 13 returned 100% blocks executed 83%
+       13:   24:void product::buy(std::string s) {
+       13:   25:    std::stringstream ss;
+       13:   25-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   26:    ss << s;
+       13:   26-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   27:    int n;
+       13:   28:    ss >> n;
+       13:   28-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   29:
+       13:   30:    if (n > amount) {
+       13:   30-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 10
+        3:   31:        n = amount;
+        3:   31-block  0
+        -:   32:    }
+       13:   33:    if (n < 0) {
+       13:   33-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 10
+        3:   34:        n = 0;
+        3:   34-block  0
+        -:   35:    }
+        -:   36:
+       13:   37:    std::cout << "Bought{" << std::setprecision(2) << std::fixed
+       13:   37-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   37-block  1
+call    3 returned 13
+call    4 returned 13
+branch  5 taken 13 (fallthrough)
+branch  6 taken 0 (throw)
+       13:   37-block  2
+call    7 returned 13
+branch  8 taken 13 (fallthrough)
+branch  9 taken 0 (throw)
+       13:   38:            << n << "}{" << name << "}{R" << price(s) << "}" << std::endl;
+       13:   38-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   38-block  1
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+       13:   38-block  2
+call    6 returned 13
+branch  7 taken 13 (fallthrough)
+branch  8 taken 0 (throw)
+       13:   38-block  3
+call    9 returned 13
+branch 10 taken 13 (fallthrough)
+branch 11 taken 0 (throw)
+       13:   38-block  4
+call   12 returned 13
+branch 13 taken 13 (fallthrough)
+branch 14 taken 0 (throw)
+       13:   38-block  5
+call   15 returned 13
+branch 16 taken 13 (fallthrough)
+branch 17 taken 0 (throw)
+       13:   38-block  6
+call   18 returned 13
+branch 19 taken 13 (fallthrough)
+branch 20 taken 0 (throw)
+       13:   38-block  7
+call   21 returned 13
+branch 22 taken 13 (fallthrough)
+branch 23 taken 0 (throw)
+       13:   38-block  8
+call   24 returned 13
+branch 25 taken 13 (fallthrough)
+branch 26 taken 0 (throw)
+       13:   38-block  9
+call   27 returned 13
+branch 28 taken 13 (fallthrough)
+branch 29 taken 0 (throw)
+    $$$$$:   38-block 10
+call   30 never executed
+    $$$$$:   38-block 11
+       13:   39:}
+       13:   39-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   39-block  1
+    $$$$$:   39-block  2
+call    3 never executed
+        -:   40:/**
+        -:   41: * @brief Calculates the price of a product
+        -:   42: * @param s The amount to buy, will be a positive integer
+        -:   43: * @return The price of the product
+        -:   44: */
+function _ZN7product5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 10 returned 100% blocks executed 82%
+       10:   45:float product::price(std::string s) {
+       10:   46:    std::stringstream ss;
+       10:   46-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   47:    ss << s;
+       10:   47-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   48:    int n;
+       10:   49:    ss >> n;
+       10:   49-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   50:
+       10:   51:    if (n < 0) {
+       10:   51-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 8
+        2:   52:        n = 0;
+        2:   52-block  0
+        -:   53:    }
+        -:   54:
+       10:   55:    return n * value;
+       10:   55-block  0
+       10:   56:}
+       10:   56-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   56-block  1
+call    3 never executed
+        -:   57:/**
+        -:   58: * @brief Prints the product
+        -:   59: */
+function _ZN7product5printEv called 5 returned 100% blocks executed 88%
+        5:   60:void product::print() {
+        5:   61:    std::cout << "product{" << getBarcode() << "}{"
+        5:   61-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   61-block  1
+call    3 never executed
+        5:   62:            << name << "}{R" << value << "}{"
+        5:   62-block  0
+call    0 returned 5
+call    1 returned 5
+call    2 returned 5
+branch  3 taken 5 (fallthrough)
+branch  4 taken 0 (throw)
+        5:   62-block  1
+call    5 returned 5
+branch  6 taken 5 (fallthrough)
+branch  7 taken 0 (throw)
+        5:   62-block  2
+call    8 returned 5
+branch  9 taken 5 (fallthrough)
+branch 10 taken 0 (throw)
+        5:   62-block  3
+call   11 returned 5
+branch 12 taken 5 (fallthrough)
+branch 13 taken 0 (throw)
+        5:   62-block  4
+call   14 returned 5
+branch 15 taken 5 (fallthrough)
+branch 16 taken 0 (throw)
+        5:   62-block  5
+call   17 returned 5
+branch 18 taken 5 (fallthrough)
+branch 19 taken 0 (throw)
+        5:   63:            << amount << "}" << std::endl;
+        5:   63-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   63-block  1
+call    3 returned 5
+branch  4 taken 5 (fallthrough)
+branch  5 taken 0 (throw)
+        5:   63-block  2
+call    6 returned 5
+branch  7 taken 5 (fallthrough)
+branch  8 taken 0 (throw)
+        5:   64:}
+        5:   64-block  0

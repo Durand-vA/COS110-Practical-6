@@ -49,6 +49,9 @@ void shop::addItem(item* i) {
 }
 
 void shop::addItems(item** i, int n) {
+    if (i == NULL) {
+        return;
+    }
     for (int j = 0; j < n; j++) {
         addItem(i[j]);
     }

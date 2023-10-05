@@ -1,0 +1,250 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/labor.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/labor.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/labor.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include <iomanip>
+        -:    3:#include "labor.h"
+        -:    4:
+function _ZN5laborC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiicPii called 0 returned 0% blocks executed 0%
+    #####:    5:labor::labor(std::string n, int bNn, int r, char p, int* wR, int num) : service(n, bNn, r, p) {
+    %%%%%:    5-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    5-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:    5-block  2
+call    7 never executed
+    $$$$$:    5-block  3
+call    8 never executed
+    #####:    6:    numWorkers = num;
+    #####:    7:    workerRates = new int[numWorkers];
+    %%%%%:    7-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:    7-block  1
+    %%%%%:    7-block  2
+    %%%%%:    7-block  3
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:    8:    for (int i = 0; i < numWorkers; i++) {
+    %%%%%:    8-block  0
+    %%%%%:    8-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:    9:        workerRates[i] = wR[i];
+    %%%%%:    9-block  0
+        -:   10:    }
+    #####:   11:}
+    %%%%%:   11-block  0
+    $$$$$:   11-block  1
+call    0 never executed
+        -:   12:
+function _ZN5laborD2Ev called 0 returned 0% blocks executed 0%
+    #####:   13:labor::~labor() {
+    #####:   14:    if (workerRates != NULL) {
+    %%%%%:   14-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   15:        delete [] workerRates;
+    %%%%%:   15-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   15-block  1
+call    2 never executed
+        -:   16:    }
+    #####:   17:}
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   17-block  1
+        -:   18:
+function _ZN5labor5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   19:float labor::price(std::string s) {
+    #####:   20:    float base = service::price(s);
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   20-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   20-block  2
+call    7 never executed
+    #####:   21:    float total = 0;
+    #####:   22:    for (int i = 0; i < numWorkers; i++) {
+    %%%%%:   22-block  0
+    %%%%%:   22-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   23:        total += base * workerRates[i];
+    %%%%%:   23-block  0
+        -:   24:    }
+    #####:   25:    return total;
+    %%%%%:   25-block  0
+    %%%%%:   25-block  1
+        -:   26:}
+        -:   27:
+function _ZN5labor5printEv called 0 returned 0% blocks executed 0%
+    #####:   28:void labor::print() {
+    #####:   29:    std::string sPeriod;
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   30:    switch (period) {
+    %%%%%:   30-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:   31:        case 'h':
+    #####:   32:            sPeriod = "hour";
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   33:            break;
+    %%%%%:   33-block  0
+    #####:   34:        case 'd':
+    #####:   35:            sPeriod = "day";
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   36:            break;
+    %%%%%:   36-block  0
+    #####:   37:        case 'w':
+    #####:   38:            sPeriod = "week";
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   39:            break;
+    %%%%%:   39-block  0
+    #####:   40:        case 'm':
+    #####:   41:            sPeriod = "month";
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   42:            break;
+    %%%%%:   42-block  0
+    #####:   43:        default:
+    #####:   44:            sPeriod = "year";
+    %%%%%:   44-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   45:            break;
+    %%%%%:   45-block  0
+        -:   46:    }
+        -:   47:
+    #####:   48:    std::cout << "labor{" << getBarcode() << "}{" <<std::setprecision(2) << std::fixed
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   48-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   48-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   48-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   48-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   48-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   48-block  6
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   48-block  7
+call   22 never executed
+    $$$$$:   48-block  8
+    #####:   49:            << name << "}{R" << rate << "/" << sPeriod
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   49-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   50:            << "}{[";
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   50-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   50-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   50-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    #####:   51:    for (int i = 0; i < numWorkers; i++) {
+    %%%%%:   51-block  0
+    %%%%%:   51-block  1
+    %%%%%:   51-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:   52:        std::cout << workerRates[i];
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   53:        if (i != numWorkers - 1) {
+    %%%%%:   53-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   54:            std::cout << ",";
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   55:        }
+        -:   56:    }
+    #####:   57:    std::cout << "]}" << std::endl;
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   57-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   58:}
+    %%%%%:   58-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   58-block  1
+    $$$$$:   58-block  2
+call    3 never executed
+        -:   59:

@@ -1,0 +1,213 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/subscription.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/subscription.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/subscription.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by vanaa on 2023/10/03.
+        -:    3://
+        -:    4:
+        -:    5:#include <iostream>
+        -:    6:#include <iomanip>
+        -:    7:#include "subscription.h"
+        -:    8:
+function _ZN12subscriptionC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiicf called 0 returned 0% blocks executed 0%
+    #####:    9:subscription::subscription(std::string n, int bNn, int r, char p, float d) : service(n, bNn, r, p) {
+    %%%%%:    9-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    9-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:    9-block  2
+call    7 never executed
+    #####:   10:    yearDiscount = d;
+    #####:   11:}
+    %%%%%:   11-block  0
+        -:   12:
+function _ZN12subscriptionD2Ev called 0 returned 0% blocks executed 0%
+    #####:   13:subscription::~subscription() {
+        -:   14:
+    #####:   15:}
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   15-block  1
+        -:   16:
+function _ZN12subscription5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   17:float subscription::price(std::string s) {
+    #####:   18:    char p = s[s.find(' ') + 1];
+    %%%%%:   18-block  0
+call    0 never executed
+call    1 never executed
+        -:   19:
+    #####:   20:    float scale = 1;
+    #####:   21:    switch (p) {
+branch  0 never executed
+branch  1 never executed
+    #####:   22:        case 'h':
+        -:   23:        case 'd':
+        -:   24:        case 'w':
+        -:   25:        case 'm':
+    #####:   26:            break;
+    %%%%%:   26-block  0
+    #####:   27:        default:
+    #####:   28:            scale = 1 - yearDiscount;
+    #####:   29:            break;
+    %%%%%:   29-block  0
+        -:   30:    }
+    #####:   31:    return service::price(s) * scale;
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   31-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   31-block  2
+    %%%%%:   31-block  3
+    $$$$$:   31-block  4
+call    7 never executed
+        -:   32:}
+        -:   33:
+function _ZN12subscription5printEv called 0 returned 0% blocks executed 0%
+    #####:   34:void subscription::print() {
+    #####:   35:    std::string sPeriod;
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   36:    switch (period) {
+    %%%%%:   36-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:   37:        case 'h':
+    #####:   38:            sPeriod = "hour";
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   39:            break;
+    %%%%%:   39-block  0
+    #####:   40:        case 'd':
+    #####:   41:            sPeriod = "day";
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   42:            break;
+    %%%%%:   42-block  0
+    #####:   43:        case 'w':
+    #####:   44:            sPeriod = "week";
+    %%%%%:   44-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   45:            break;
+    %%%%%:   45-block  0
+    #####:   46:        case 'm':
+    #####:   47:            sPeriod = "month";
+    %%%%%:   47-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   48:            break;
+    %%%%%:   48-block  0
+    #####:   49:        default:
+    #####:   50:            sPeriod = "year";
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   51:            break;
+    %%%%%:   51-block  0
+        -:   52:    }
+        -:   53:
+    #####:   54:    std::cout << "subscription{" << getBarcode() << "}{"
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   54-block  1
+call    3 never executed
+    $$$$$:   54-block  2
+    #####:   55:            << name << "}{R" << rate << "/" << sPeriod
+    %%%%%:   55-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   55-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   55-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   55-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   55-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   55-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    #####:   56:            << "}{" << std::setprecision(2) << std::fixed
+    %%%%%:   56-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   56-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   56-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   56-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   56-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   56-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    #####:   57:            << yearDiscount * 100 << "%}" << std::endl;
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   57-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   57-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    #####:   58:}
+    %%%%%:   58-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   58-block  1
+    $$$$$:   58-block  2
+call    3 never executed

@@ -45,13 +45,13 @@ void labor::print() {
             break;
     }
 
-    std::cout << "labor{" << getBarcode() << "}{"
+    std::cout << "labor{" << getBarcode() << "}{" <<std::setprecision(2) << std::fixed
             << name << "}{R" << rate << "/" << sPeriod
             << "}{[";
     for (int i = 0; i < numWorkers; i++) {
         std::cout << workerRates[i];
         if (i != numWorkers - 1) {
-            std::cout << ", ";
+            std::cout << ",";
         }
     }
     std::cout << "]}" << std::endl;

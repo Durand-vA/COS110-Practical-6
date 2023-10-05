@@ -1,0 +1,133 @@
+        -:    0:Source:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/discountedProduct.cpp
+        -:    0:Graph:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/discountedProduct.cpp.gcno
+        -:    0:Data:/mnt/c/Users/vanaa/OneDrive - University of Pretoria/1st Year/Semester 2/COS 110/__Pracs/Practical 6/Practical 6/cmake-build-debug-coverage/CMakeFiles/Practical_6.dir/discountedProduct.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include <iomanip>
+        -:    3:#include "discountedProduct.h"
+        -:    4:/**
+        -:    5: * @brief discountedProduct::discountedProduct
+        -:    6: * @param n The name of the product
+        -:    7: * @param bNn The barcode number of the product
+        -:    8: * @param v The value of the product
+        -:    9: * @param a The amount of the product
+        -:   10: * @param d The discount percentage of the product
+        -:   11: */
+function _ZN17discountedProductC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiif called 0 returned 0% blocks executed 0%
+    #####:   12:discountedProduct::discountedProduct(std::string n, int bNn, int v, int a, float d) : product(n, bNn, v, a) {
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   12-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   12-block  2
+call    7 never executed
+    #####:   13:    discount = d;
+    #####:   14:}
+    %%%%%:   14-block  0
+        -:   15:/**
+        -:   16: * @brief Destructor
+        -:   17: */
+function _ZN17discountedProductD2Ev called 0 returned 0% blocks executed 0%
+    #####:   18:discountedProduct::~discountedProduct() {
+        -:   19:
+    #####:   20:}
+    %%%%%:   20-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   20-block  1
+        -:   21:/**
+        -:   22: * @brief Applies the discount to the price of the product
+        -:   23: */
+function _ZN17discountedProduct5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   24:float discountedProduct::price(std::string s) {
+    #####:   25:    return product::price(s) * (1 - discount);
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   25-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   25-block  2
+    %%%%%:   25-block  3
+    $$$$$:   25-block  4
+call    7 never executed
+        -:   26:}
+        -:   27:
+function _ZN17discountedProduct5printEv called 0 returned 0% blocks executed 0%
+    #####:   28:void discountedProduct::print() {
+    #####:   29:    std::cout << "discountedProduct{" << getBarcode()
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   29-block  1
+call    3 never executed
+    #####:   30:            << "}{" << name << "}{R" << value
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   30-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   30-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   30-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    #####:   31:            << "}{" << amount << "}{" << std::setprecision(2)
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   31-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   31-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   31-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   31-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    #####:   32:            << std::fixed << discount*100 << "%}" << std::endl;
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   32-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   32-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   32-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    #####:   33:}
+    %%%%%:   33-block  0

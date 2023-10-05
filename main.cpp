@@ -170,15 +170,31 @@ void shopTest() {
     shop1.removeItem("service10");
 
     delete [] is;
+    is = new item*[10];
+
+    for (int i = 0; i < 10; i++) {
+        std::stringstream ss;
+        ss << "service" << i;
+        is[i] = new service(ss.str(), (i+1)*13, (i+1)*22, cs[i%5]);
+    }
+    shop1.addItems(is, 10);
+
+
+    for (int i = 0; i < 10; i++) {
+        if (i != 1)
+            delete is[i];
+    }
+
+    delete [] is;
 }
 
 int main() {
-    productTest();
-    serviceTest();
-    bulkTest();
-    discountedProductTest();
-    laborTest();
-    subscriptionTest();
+//    productTest();
+//    serviceTest();
+//    bulkTest();
+//    discountedProductTest();
+//    laborTest();
+//    subscriptionTest();
     shopTest();
     return 0;
 }

@@ -36,11 +36,13 @@ void product::buy(std::string s) {
 
     amount -= n;
 
-    ss << n;
-    ss >> s;
+    std::stringstream ss2;
+    ss2 << n;
+    std::string inp;
+    inp = ss2.str();
 
     std::cout << "Bought{" << std::setprecision(2) << std::fixed
-            << n << "}{" << name << "}{R" << price(s) << "}" << std::endl;
+            << n << "}{" << name << "}{R" << price(inp) << "}" << std::endl;
 }
 /**
  * @brief Calculates the price of a product

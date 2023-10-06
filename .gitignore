@@ -41,3 +41,5 @@
 /cmake-build-debug/CMakeCache.txt
 /cmake-build-debug/Makefile
 /cmake-build-debug/Practical_6.cbp
+/cmake-build-debug-coverage/coverage/labor.cpp.gcda##iomanip.gcov
+/cmake-build-debug-coverage/coverage/labor.cpp.gcda##ios_base.h.gcov

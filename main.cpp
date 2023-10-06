@@ -25,10 +25,12 @@ void productTest() {
     product3.print();
     product4.print();
 
-    product1.buy("5");
+    product1.buy("15");
     product2.buy("10");
     product3.buy("-1");
     product4.buy("0");
+
+    product1.buy("20");
 
     item* product5 = new product("item5", 36, 100, 1);
 
@@ -189,12 +191,12 @@ void shopTest() {
 }
 
 int main() {
-//    productTest();
+    productTest();
 //    serviceTest();
 //    bulkTest();
 //    discountedProductTest();
 //    laborTest();
 //    subscriptionTest();
-    shopTest();
+//    shopTest();
     return 0;
 }

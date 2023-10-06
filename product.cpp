@@ -36,6 +36,9 @@ void product::buy(std::string s) {
 
     amount -= n;
 
+    ss << n;
+    ss >> s;
+
     std::cout << "Bought{" << std::setprecision(2) << std::fixed
             << n << "}{" << name << "}{R" << price(s) << "}" << std::endl;
 }

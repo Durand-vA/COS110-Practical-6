@@ -15,156 +15,156 @@
         -:   11: * @param dP The discount percentage of the product
         -:   12: * @param dA The discount amount of the product
         -:   13: */
-function _ZN4bulkC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiifi called 4 returned 100% blocks executed 71%
-        4:   14:bulk::bulk(std::string n, int bNn, int v, int a, float dP, int dA) : product(n, bNn, v, a) {
-        4:   14-block  0
-call    0 returned 4
-call    1 returned 4
-branch  2 taken 4 (fallthrough)
-branch  3 taken 0 (throw)
-        4:   14-block  1
-call    4 returned 4
-branch  5 taken 4 (fallthrough)
-branch  6 taken 0 (throw)
+function _ZN4bulkC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiifi called 0 returned 0% blocks executed 0%
+    #####:   14:bulk::bulk(std::string n, int bNn, int v, int a, float dP, int dA) : product(n, bNn, v, a) {
+    %%%%%:   14-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   14-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
     $$$$$:   14-block  2
 call    7 never executed
-        4:   15:    discountPercentage = dP;
-        4:   16:    discountAmount = dA;
-        4:   17:}
-        4:   17-block  0
+    #####:   15:    discountPercentage = dP;
+    #####:   16:    discountAmount = dA;
+    #####:   17:}
+    %%%%%:   17-block  0
         -:   18:
-function _ZN4bulkD2Ev called 4 returned 100% blocks executed 100%
-        4:   19:bulk::~bulk() {
+function _ZN4bulkD2Ev called 0 returned 0% blocks executed 0%
+    #####:   19:bulk::~bulk() {
         -:   20:
-        4:   21:}
-        4:   21-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   21-block  1
+    #####:   21:}
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   21-block  1
         -:   22:/**
         -:   23: * @brief Calculates the price of a bulk product
         -:   24: * @param s The amount to buy, will be a positive integer
         -:   25: * @return The price of the bulk product
         -:   26: */
-function _ZN4bulk5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 82%
-        4:   27:float bulk::price(std::string s) {
-        4:   28:    std::stringstream ss;
-        4:   28-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   29:    ss << s;
-        4:   29-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
+function _ZN4bulk5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   27:float bulk::price(std::string s) {
+    #####:   28:    std::stringstream ss;
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   29:    ss << s;
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -:   30:    int n;
-        4:   31:    ss >> n;
-        4:   31-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
+    #####:   31:    ss >> n;
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -:   32:
-        4:   33:    if (n < 0) {
-        4:   33-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 3
-        1:   34:        n = 0;
-        1:   34-block  0
+    #####:   33:    if (n < 0) {
+    %%%%%:   33-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   34:        n = 0;
+    %%%%%:   34-block  0
         -:   35:    }
         -:   36:
-        4:   37:    int numGroups = n / discountAmount;
-        4:   38:    float groupDiscountPrice = value * (1 - discountPercentage) * discountAmount;
+    #####:   37:    int numGroups = n / discountAmount;
+    #####:   38:    float groupDiscountPrice = value * (1 - discountPercentage) * discountAmount;
         -:   39:
-        4:   40:    return numGroups * groupDiscountPrice + (n % discountAmount) * value;
-        4:   40-block  0
-        4:   41:}
-        4:   41-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
+    #####:   40:    return numGroups * groupDiscountPrice + (n % discountAmount) * value;
+    %%%%%:   40-block  0
+    #####:   41:}
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     $$$$$:   41-block  1
 call    3 never executed
         -:   42:/**
         -:   43: * @brief Prints the bulk product
         -:   44: */
-function _ZN4bulk5printEv called 4 returned 100% blocks executed 91%
-        4:   45:void bulk::print() {
-        4:   46:    std::cout << "bulk{" << getBarcode() << "}{" << name
-        4:   46-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
+function _ZN4bulk5printEv called 0 returned 0% blocks executed 0%
+    #####:   45:void bulk::print() {
+    #####:   46:    std::cout << "bulk{" << getBarcode() << "}{" << name
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     $$$$$:   46-block  1
 call    3 never executed
-        4:   47:            << "}{R" << value << "}{" << amount << "}{"
-        4:   47-block  0
-call    0 returned 4
-call    1 returned 4
-call    2 returned 4
-branch  3 taken 4 (fallthrough)
-branch  4 taken 0 (throw)
-        4:   47-block  1
-call    5 returned 4
-branch  6 taken 4 (fallthrough)
-branch  7 taken 0 (throw)
-        4:   47-block  2
-call    8 returned 4
-branch  9 taken 4 (fallthrough)
-branch 10 taken 0 (throw)
-        4:   47-block  3
-call   11 returned 4
-branch 12 taken 4 (fallthrough)
-branch 13 taken 0 (throw)
-        4:   47-block  4
-call   14 returned 4
-branch 15 taken 4 (fallthrough)
-branch 16 taken 0 (throw)
-        4:   47-block  5
-call   17 returned 4
-branch 18 taken 4 (fallthrough)
-branch 19 taken 0 (throw)
-        4:   48:            << std::setprecision(2) << std::fixed
-        4:   48-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   48-block  1
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:   48-block  2
-call    6 returned 4
-call    7 returned 4
-branch  8 taken 4 (fallthrough)
-branch  9 taken 0 (throw)
-        4:   48-block  3
-call   10 returned 4
-branch 11 taken 4 (fallthrough)
-branch 12 taken 0 (throw)
-        4:   49:            << discountPercentage * 100 << "%}{"
-        4:   49-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   49-block  1
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:   50:            << discountAmount << "}" << std::endl;
-        4:   50-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   50-block  1
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:   50-block  2
-call    6 returned 4
-branch  7 taken 4 (fallthrough)
-branch  8 taken 0 (throw)
-        4:   51:}
-        4:   51-block  0
+    #####:   47:            << "}{R" << value << "}{" << amount << "}{"
+    %%%%%:   47-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   47-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   47-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   47-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   47-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   47-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    #####:   48:            << std::setprecision(2) << std::fixed
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   48-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   48-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   48-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    #####:   49:            << discountPercentage * 100 << "%}{"
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   49-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   50:            << discountAmount << "}" << std::endl;
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   50-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   50-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    #####:   51:}
+    %%%%%:   51-block  0
         -:   52:

@@ -84,40 +84,40 @@
         -:   80:    };
         -:   81:
         -:   82:  inline _GLIBCXX_CONSTEXPR _Ios_Fmtflags
-function _ZStanSt13_Ios_FmtflagsS_ called 86 returned 100% blocks executed 100%
-       86:   83:  operator&(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
-       86:   84:  { return _Ios_Fmtflags(static_cast<int>(__a) & static_cast<int>(__b)); }
-       86:   84-block  0
+function _ZStanSt13_Ios_FmtflagsS_ called 8 returned 100% blocks executed 100%
+        8:   83:  operator&(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
+        8:   84:  { return _Ios_Fmtflags(static_cast<int>(__a) & static_cast<int>(__b)); }
+        8:   84-block  0
         -:   85:
         -:   86:  inline _GLIBCXX_CONSTEXPR _Ios_Fmtflags
-function _ZStorSt13_Ios_FmtflagsS_ called 43 returned 100% blocks executed 100%
-       43:   87:  operator|(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
-       43:   88:  { return _Ios_Fmtflags(static_cast<int>(__a) | static_cast<int>(__b)); }
-       43:   88-block  0
+function _ZStorSt13_Ios_FmtflagsS_ called 4 returned 100% blocks executed 100%
+        4:   87:  operator|(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
+        4:   88:  { return _Ios_Fmtflags(static_cast<int>(__a) | static_cast<int>(__b)); }
+        4:   88-block  0
         -:   89:
         -:   90:  inline _GLIBCXX_CONSTEXPR _Ios_Fmtflags
         -:   91:  operator^(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
         -:   92:  { return _Ios_Fmtflags(static_cast<int>(__a) ^ static_cast<int>(__b)); }
         -:   93:
         -:   94:  inline _GLIBCXX_CONSTEXPR _Ios_Fmtflags
-function _ZStcoSt13_Ios_Fmtflags called 43 returned 100% blocks executed 100%
-       43:   95:  operator~(_Ios_Fmtflags __a)
-       43:   96:  { return _Ios_Fmtflags(~static_cast<int>(__a)); }
-       43:   96-block  0
+function _ZStcoSt13_Ios_Fmtflags called 4 returned 100% blocks executed 100%
+        4:   95:  operator~(_Ios_Fmtflags __a)
+        4:   96:  { return _Ios_Fmtflags(~static_cast<int>(__a)); }
+        4:   96-block  0
         -:   97:
         -:   98:  inline const _Ios_Fmtflags&
-function _ZStoRRSt13_Ios_FmtflagsS_ called 43 returned 100% blocks executed 100%
-       43:   99:  operator|=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b)
-       43:  100:  { return __a = __a | __b; }
-       43:  100-block  0
-call    0 returned 43
+function _ZStoRRSt13_Ios_FmtflagsS_ called 4 returned 100% blocks executed 100%
+        4:   99:  operator|=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b)
+        4:  100:  { return __a = __a | __b; }
+        4:  100-block  0
+call    0 returned 4
         -:  101:
         -:  102:  inline const _Ios_Fmtflags&
-function _ZStaNRSt13_Ios_FmtflagsS_ called 43 returned 100% blocks executed 100%
-       43:  103:  operator&=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b)
-       43:  104:  { return __a = __a & __b; }
-       43:  104-block  0
-call    0 returned 43
+function _ZStaNRSt13_Ios_FmtflagsS_ called 4 returned 100% blocks executed 100%
+        4:  103:  operator&=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b)
+        4:  104:  { return __a = __a & __b; }
+        4:  104-block  0
+call    0 returned 4
         -:  105:
         -:  106:  inline const _Ios_Fmtflags&
         -:  107:  operator^=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b)
@@ -706,18 +706,18 @@ call    0 returned 43
         -:  690:     *  @a fmtfl @c & @a mask.  An example mask is @c ios_base::adjustfield.
         -:  691:    */
         -:  692:    fmtflags
-function _ZNSt8ios_base4setfESt13_Ios_FmtflagsS0_ called 43 returned 100% blocks executed 100%
-       43:  693:    setf(fmtflags __fmtfl, fmtflags __mask)
+function _ZNSt8ios_base4setfESt13_Ios_FmtflagsS0_ called 4 returned 100% blocks executed 100%
+        4:  693:    setf(fmtflags __fmtfl, fmtflags __mask)
         -:  694:    {
-       43:  695:      fmtflags __old = _M_flags;
-       43:  696:      _M_flags &= ~__mask;
-       43:  696-block  0
-call    0 returned 43
-call    1 returned 43
-       43:  697:      _M_flags |= (__fmtfl & __mask);
-call    0 returned 43
-call    1 returned 43
-       43:  698:      return __old;
+        4:  695:      fmtflags __old = _M_flags;
+        4:  696:      _M_flags &= ~__mask;
+        4:  696-block  0
+call    0 returned 4
+call    1 returned 4
+        4:  697:      _M_flags |= (__fmtfl & __mask);
+call    0 returned 4
+call    1 returned 4
+        4:  698:      return __old;
         -:  699:    }
         -:  700:
         -:  701:    /**
@@ -1090,13 +1090,13 @@ call    1 returned 43
         -: 1068:  // [27.4.5.4] floatfield manipulators
         -: 1069:  /// Calls base.setf(ios_base::fixed, ios_base::floatfield).
         -: 1070:  inline ios_base&
-function _ZSt5fixedRSt8ios_base called 43 returned 100% blocks executed 100%
-       43: 1071:  fixed(ios_base& __base)
+function _ZSt5fixedRSt8ios_base called 4 returned 100% blocks executed 100%
+        4: 1071:  fixed(ios_base& __base)
         -: 1072:  {
-       43: 1073:    __base.setf(ios_base::fixed, ios_base::floatfield);
-       43: 1073-block  0
-call    0 returned 43
-       43: 1074:    return __base;
+        4: 1073:    __base.setf(ios_base::fixed, ios_base::floatfield);
+        4: 1073-block  0
+call    0 returned 4
+        4: 1074:    return __base;
         -: 1075:  }
         -: 1076:
         -: 1077:  /// Calls base.setf(ios_base::scientific, ios_base::floatfield).

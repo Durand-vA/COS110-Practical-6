@@ -78,7 +78,7 @@ void shop::buyItems(std::string s) {
         }
     }
 
-    std::cout << "Total: R" << std::setprecision(2) << std::fixed << price << std::endl;
+    std::cout << "Total: R " << std::setprecision(2) << std::fixed << price << std::endl;
 }
 
 void shop::printItems() {

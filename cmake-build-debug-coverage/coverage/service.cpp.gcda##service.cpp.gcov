@@ -13,217 +13,217 @@
         -:    9: * @param r The rate of the service
         -:   10: * @param p The period of the service
         -:   11: */
-function _ZN7serviceC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiic called 25 returned 100% blocks executed 71%
-       25:   12:service::service(std::string n, int bNn, int r, char p) : item(n, bNn) {
-       25:   12-block  0
-call    0 returned 25
-call    1 returned 25
-branch  2 taken 25 (fallthrough)
+function _ZN7serviceC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiic called 20 returned 100% blocks executed 71%
+       20:   12:service::service(std::string n, int bNn, int r, char p) : item(n, bNn) {
+       20:   12-block  0
+call    0 returned 20
+call    1 returned 20
+branch  2 taken 20 (fallthrough)
 branch  3 taken 0 (throw)
-       25:   12-block  1
-call    4 returned 25
-branch  5 taken 25 (fallthrough)
+       20:   12-block  1
+call    4 returned 20
+branch  5 taken 20 (fallthrough)
 branch  6 taken 0 (throw)
     $$$$$:   12-block  2
 call    7 never executed
-       25:   13:    rate = r;
-       25:   14:    period = p;
-       25:   15:}
-       25:   15-block  0
+       20:   13:    rate = r;
+       20:   14:    period = p;
+       20:   15:}
+       20:   15-block  0
         -:   16:
-function _ZN7serviceD2Ev called 15 returned 100% blocks executed 100%
-       15:   17:service::~service() {
+function _ZN7serviceD2Ev called 0 returned 0% blocks executed 0%
+    #####:   17:service::~service() {
         -:   18:
-       15:   19:}
-       15:   19-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
-branch  2 taken 0 (throw)
-       15:   19-block  1
+    #####:   19:}
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   19-block  1
         -:   20:/**
         -:   21: * @brief Buys a service
         -:   22: * @param s The amount to buy. Format: "<amount> <period>"
         -:   23: */
-function _ZN7service3buyENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 17 returned 100% blocks executed 80%
-       17:   24:void service::buy(std::string s) {
-       17:   25:    std::stringstream ss;
-       17:   25-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+function _ZN7service3buyENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 67%
+        2:   24:void service::buy(std::string s) {
+        2:   25:    std::stringstream ss;
+        2:   25-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   26:    ss << s.substr(0, s.find(' '));
-       17:   26-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   26:    ss << s.substr(0, s.find(' '));
+        2:   26-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   26-block  1
-call    3 returned 17
-branch  4 taken 17 (fallthrough)
+        2:   26-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-       17:   26-block  2
-call    6 returned 17
-branch  7 taken 17 (fallthrough)
+        2:   26-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
 branch  8 taken 0 (throw)
-       17:   26-block  3
-call    9 returned 17
-branch 10 taken 17 (fallthrough)
+        2:   26-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
 branch 11 taken 0 (throw)
     $$$$$:   26-block  4
 call   12 never executed
     $$$$$:   26-block  5
         -:   27:    int n;
-       17:   28:    ss >> n;
-       17:   28-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   28:    ss >> n;
+        2:   28-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   29:    char p = s[s.find(' ') + 1];
-       17:   29-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   29:    char p = s[s.find(' ') + 1];
+        2:   29-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   29-block  1
-call    3 returned 17
-branch  4 taken 17 (fallthrough)
+        2:   29-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
         -:   30:
-       17:   31:    std::string sPeriod;
-       17:   31-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   31:    std::string sPeriod;
+        2:   31-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
         -:   32:
-       17:   33:    switch (p) {
-       17:   33-block  0
-branch  0 taken 4
-branch  1 taken 3
-branch  2 taken 3
-branch  3 taken 3
-branch  4 taken 4
-        4:   34:        case 'h':
-        4:   35:            sPeriod = "hours";
-        4:   35-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
+        2:   33:    switch (p) {
+        2:   33-block  0
+branch  0 taken 1
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 1
+        1:   34:        case 'h':
+        1:   35:            sPeriod = "hours";
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        4:   36:            break;
-        4:   36-block  0
-        3:   37:        case 'd':
-        3:   38:            sPeriod = "days";
-        3:   38-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        1:   36:            break;
+        1:   36-block  0
+    #####:   37:        case 'd':
+    #####:   38:            sPeriod = "days";
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   39:            break;
+    %%%%%:   39-block  0
+    #####:   40:        case 'w':
+    #####:   41:            sPeriod = "weeks";
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   42:            break;
+    %%%%%:   42-block  0
+    #####:   43:        case 'm':
+    #####:   44:            sPeriod = "months";
+    %%%%%:   44-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   45:            break;
+    %%%%%:   45-block  0
+        1:   46:        default:
+        1:   47:            p = 'y';
+        1:   48:            sPeriod = "years";
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        3:   39:            break;
-        3:   39-block  0
-        3:   40:        case 'w':
-        3:   41:            sPeriod = "weeks";
-        3:   41-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
-branch  2 taken 0 (throw)
-        3:   42:            break;
-        3:   42-block  0
-        3:   43:        case 'm':
-        3:   44:            sPeriod = "months";
-        3:   44-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
-branch  2 taken 0 (throw)
-        3:   45:            break;
-        3:   45-block  0
-        4:   46:        default:
-        4:   47:            p = 'y';
-        4:   48:            sPeriod = "years";
-        4:   48-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:   49:            break;
-        4:   49-block  0
+        1:   49:            break;
+        1:   49-block  0
         -:   50:    }
         -:   51:
-       17:   52:    if (n < 0) {
-       17:   52-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 14
-        3:   53:        n = 0;
-        3:   53-block  0
+        2:   52:    if (n < 0) {
+        2:   52-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   53:        n = 0;
+    %%%%%:   53-block  0
         -:   54:    }
         -:   55:
-       17:   56:    std::cout << "Bought{" << n << sPeriod
-       17:   56-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   56:    std::cout << "Bought{" << n << sPeriod
+        2:   56-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   57:            << "}{" << name << "}{R" << std::setprecision(2)
-       17:   57-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   57:            << "}{" << name << "}{R" << std::setprecision(2)
+        2:   57-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   57-block  1
-call    3 returned 17
-branch  4 taken 17 (fallthrough)
+        2:   57-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-       17:   57-block  2
-call    6 returned 17
-branch  7 taken 17 (fallthrough)
+        2:   57-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
 branch  8 taken 0 (throw)
-       17:   57-block  3
-call    9 returned 17
-branch 10 taken 17 (fallthrough)
+        2:   57-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
 branch 11 taken 0 (throw)
-       17:   57-block  4
-call   12 returned 17
-branch 13 taken 17 (fallthrough)
+        2:   57-block  4
+call   12 returned 2
+branch 13 taken 2 (fallthrough)
 branch 14 taken 0 (throw)
-       17:   57-block  5
-call   15 returned 17
-call   16 returned 17
-branch 17 taken 17 (fallthrough)
+        2:   57-block  5
+call   15 returned 2
+call   16 returned 2
+branch 17 taken 2 (fallthrough)
 branch 18 taken 0 (throw)
-       17:   58:            << std::fixed << price(s) << "}" << std::endl;
-       17:   58-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   58:            << std::fixed << price(s) << "}" << std::endl;
+        2:   58-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   58-block  1
-call    3 returned 17
-branch  4 taken 17 (fallthrough)
+        2:   58-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-       17:   58-block  2
-call    6 returned 17
-branch  7 taken 17 (fallthrough)
+        2:   58-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
 branch  8 taken 0 (throw)
-       17:   58-block  3
-call    9 returned 17
-branch 10 taken 17 (fallthrough)
+        2:   58-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
 branch 11 taken 0 (throw)
-       17:   58-block  4
-call   12 returned 17
-branch 13 taken 17 (fallthrough)
+        2:   58-block  4
+call   12 returned 2
+branch 13 taken 2 (fallthrough)
 branch 14 taken 0 (throw)
-       17:   58-block  5
-call   15 returned 17
-branch 16 taken 17 (fallthrough)
+        2:   58-block  5
+call   15 returned 2
+branch 16 taken 2 (fallthrough)
 branch 17 taken 0 (throw)
-       17:   58-block  6
-call   18 returned 17
-branch 19 taken 17 (fallthrough)
+        2:   58-block  6
+call   18 returned 2
+branch 19 taken 2 (fallthrough)
 branch 20 taken 0 (throw)
     $$$$$:   58-block  7
 call   21 never executed
     $$$$$:   58-block  8
-       17:   59:}
-       17:   59-block  0
-call    0 returned 17
-branch  1 taken 17 (fallthrough)
+        2:   59:}
+        2:   59-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       17:   59-block  1
-call    3 returned 17
-branch  4 taken 17 (fallthrough)
+        2:   59-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-       17:   59-block  2
+        2:   59-block  2
     $$$$$:   59-block  3
 call    6 never executed
     $$$$$:   59-block  4
@@ -233,246 +233,246 @@ call    7 never executed
         -:   62: * @param s The amount to buy. Format: "<amount> <period>"
         -:   63: * @return The price of the service
         -:   64: */
-function _ZN7service5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 19 returned 100% blocks executed 84%
-       19:   65:float service::price(std::string s) {
-       19:   66:    std::stringstream ss;
-       19:   66-block  0
-call    0 returned 19
-branch  1 taken 19 (fallthrough)
+function _ZN7service5priceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 61%
+        4:   65:float service::price(std::string s) {
+        4:   66:    std::stringstream ss;
+        4:   66-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
-       19:   67:    ss << s.substr(0, s.find(' '));
-       19:   67-block  0
-call    0 returned 19
-branch  1 taken 19 (fallthrough)
+        4:   67:    ss << s.substr(0, s.find(' '));
+        4:   67-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
-       19:   67-block  1
-call    3 returned 19
-branch  4 taken 19 (fallthrough)
+        4:   67-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
 branch  5 taken 0 (throw)
-       19:   67-block  2
-call    6 returned 19
-branch  7 taken 19 (fallthrough)
+        4:   67-block  2
+call    6 returned 4
+branch  7 taken 4 (fallthrough)
 branch  8 taken 0 (throw)
-       19:   67-block  3
-call    9 returned 19
-branch 10 taken 19 (fallthrough)
+        4:   67-block  3
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
 branch 11 taken 0 (throw)
     $$$$$:   67-block  4
 call   12 never executed
     $$$$$:   67-block  5
         -:   68:    int n;
-       19:   69:    ss >> n;
-       19:   69-block  0
-call    0 returned 19
-branch  1 taken 19 (fallthrough)
+        4:   69:    ss >> n;
+        4:   69-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
-       19:   70:    char p = s[s.find(' ') + 1];
-       19:   70-block  0
-call    0 returned 19
-branch  1 taken 19 (fallthrough)
+        4:   70:    char p = s[s.find(' ') + 1];
+        4:   70-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
-       19:   70-block  1
-call    3 returned 19
-branch  4 taken 19 (fallthrough)
+        4:   70-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
 branch  5 taken 0 (throw)
         -:   71:
-       19:   72:    if (n < 0) {
-       19:   72-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 16
-        3:   73:        n = 0;
-        3:   73-block  0
+        4:   72:    if (n < 0) {
+        4:   72-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    #####:   73:        n = 0;
+    %%%%%:   73-block  0
         -:   74:    }
         -:   75:
         -:   76:    int rateScale, nScale;
         -:   77:
         -:   78:    //// Set period scale factor
-       19:   79:    switch (period) {
-       19:   79-block  0
-branch  0 taken 3
-branch  1 taken 5
-branch  2 taken 3
-branch  3 taken 3
-branch  4 taken 5
-        3:   80:        case 'h':
-        3:   81:            rateScale = 1;
-        3:   82:            break;
-        3:   82-block  0
-        5:   83:        case 'd':
-        5:   84:            rateScale = 24;
-        5:   85:            break;
-        5:   85-block  0
-        3:   86:        case 'w':
-        3:   87:            rateScale = 24 * 7;
-        3:   88:            break;
-        3:   88-block  0
-        3:   89:        case 'm':
-        3:   90:            rateScale = 24 * 7 * 4;
-        3:   91:            break;
-        3:   91-block  0
-        5:   92:        default:
-        5:   93:            rateScale = 24 * 7 * 4 * 12;
-        5:   94:            break;
-        5:   94-block  0
+        4:   79:    switch (period) {
+        4:   79-block  0
+branch  0 taken 0
+branch  1 taken 2
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 2
+    #####:   80:        case 'h':
+    #####:   81:            rateScale = 1;
+    #####:   82:            break;
+    %%%%%:   82-block  0
+        2:   83:        case 'd':
+        2:   84:            rateScale = 24;
+        2:   85:            break;
+        2:   85-block  0
+    #####:   86:        case 'w':
+    #####:   87:            rateScale = 24 * 7;
+    #####:   88:            break;
+    %%%%%:   88-block  0
+    #####:   89:        case 'm':
+    #####:   90:            rateScale = 24 * 7 * 4;
+    #####:   91:            break;
+    %%%%%:   91-block  0
+        2:   92:        default:
+        2:   93:            rateScale = 24 * 7 * 4 * 12;
+        2:   94:            break;
+        2:   94-block  0
         -:   95:    }
         -:   96:
-       19:   97:    switch (p) {
-       19:   97-block  0
-branch  0 taken 5
-branch  1 taken 3
-branch  2 taken 3
-branch  3 taken 3
-branch  4 taken 5
-        5:   98:        case 'h':
-        5:   99:            nScale = 1;
-        5:  100:            break;
-        5:  100-block  0
-        3:  101:        case 'd':
-        3:  102:            nScale = 24;
-        3:  103:            break;
-        3:  103-block  0
-        3:  104:        case 'w':
-        3:  105:            nScale = 24 * 7;
-        3:  106:            break;
-        3:  106-block  0
-        3:  107:        case 'm':
-        3:  108:            nScale = 24 * 7 * 4;
-        3:  109:            break;
-        3:  109-block  0
-        5:  110:        default:
-        5:  111:            nScale = 24 * 7 * 4 * 12;
-        5:  112:            break;
-        5:  112-block  0
+        4:   97:    switch (p) {
+        4:   97-block  0
+branch  0 taken 2
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 2
+        2:   98:        case 'h':
+        2:   99:            nScale = 1;
+        2:  100:            break;
+        2:  100-block  0
+    #####:  101:        case 'd':
+    #####:  102:            nScale = 24;
+    #####:  103:            break;
+    %%%%%:  103-block  0
+    #####:  104:        case 'w':
+    #####:  105:            nScale = 24 * 7;
+    #####:  106:            break;
+    %%%%%:  106-block  0
+    #####:  107:        case 'm':
+    #####:  108:            nScale = 24 * 7 * 4;
+    #####:  109:            break;
+    %%%%%:  109-block  0
+        2:  110:        default:
+        2:  111:            nScale = 24 * 7 * 4 * 12;
+        2:  112:            break;
+        2:  112-block  0
         -:  113:    }
         -:  114:
-       19:  115:    return ((static_cast<float>(rate) / rateScale) * (n * nScale));
-       19:  115-block  0
-       19:  116:}
-       19:  116-block  0
-call    0 returned 19
-branch  1 taken 19 (fallthrough)
+        4:  115:    return ((static_cast<float>(rate) / rateScale) * (n * nScale));
+        4:  115-block  0
+        4:  116:}
+        4:  116-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
     $$$$$:  116-block  1
 call    3 never executed
         -:  117:/**
         -:  118: * @brief Prints the service
         -:  119: */
-function _ZN7service5printEv called 15 returned 100% blocks executed 84%
-       15:  120:void service::print() {
-       15:  121:    std::string sPeriod;
-       15:  121-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
+function _ZN7service5printEv called 10 returned 100% blocks executed 84%
+       10:  120:void service::print() {
+       10:  121:    std::string sPeriod;
+       10:  121-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
-       15:  122:    switch (period) {
-       15:  122-block  0
-branch  0 taken 3
-branch  1 taken 3
-branch  2 taken 3
-branch  3 taken 3
-branch  4 taken 3
-        3:  123:        case 'h':
-        3:  124:            sPeriod = "hour";
-        3:  124-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+       10:  122:    switch (period) {
+       10:  122-block  0
+branch  0 taken 2
+branch  1 taken 2
+branch  2 taken 2
+branch  3 taken 2
+branch  4 taken 2
+        2:  123:        case 'h':
+        2:  124:            sPeriod = "hour";
+        2:  124-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  125:            break;
-        3:  125-block  0
-        3:  126:        case 'd':
-        3:  127:            sPeriod = "day";
-        3:  127-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        2:  125:            break;
+        2:  125-block  0
+        2:  126:        case 'd':
+        2:  127:            sPeriod = "day";
+        2:  127-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  128:            break;
-        3:  128-block  0
-        3:  129:        case 'w':
-        3:  130:            sPeriod = "week";
-        3:  130-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        2:  128:            break;
+        2:  128-block  0
+        2:  129:        case 'w':
+        2:  130:            sPeriod = "week";
+        2:  130-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  131:            break;
-        3:  131-block  0
-        3:  132:        case 'm':
-        3:  133:            sPeriod = "month";
-        3:  133-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        2:  131:            break;
+        2:  131-block  0
+        2:  132:        case 'm':
+        2:  133:            sPeriod = "month";
+        2:  133-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  134:            break;
-        3:  134-block  0
-        3:  135:        default:
-        3:  136:            sPeriod = "year";
-        3:  136-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        2:  134:            break;
+        2:  134-block  0
+        2:  135:        default:
+        2:  136:            sPeriod = "year";
+        2:  136-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  137:            break;
-        3:  137-block  0
+        2:  137:            break;
+        2:  137-block  0
         -:  138:    }
         -:  139:
-       15:  140:    std::cout << "service{" << getBarcode() << "}{"
-       15:  140-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
+       10:  140:    std::cout << "service{" << getBarcode() << "}{"
+       10:  140-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
     $$$$$:  140-block  1
 call    3 never executed
     $$$$$:  140-block  2
-       15:  141:            << name << "}{R" << rate << "/" << sPeriod
-       15:  141-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
+       10:  141:            << name << "}{R" << rate << "/" << sPeriod
+       10:  141-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
-       15:  141-block  1
-call    3 returned 15
-branch  4 taken 15 (fallthrough)
+       10:  141-block  1
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
 branch  5 taken 0 (throw)
-       15:  141-block  2
-call    6 returned 15
-branch  7 taken 15 (fallthrough)
+       10:  141-block  2
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
 branch  8 taken 0 (throw)
-       15:  141-block  3
-call    9 returned 15
-branch 10 taken 15 (fallthrough)
+       10:  141-block  3
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
 branch 11 taken 0 (throw)
-       15:  141-block  4
-call   12 returned 15
-branch 13 taken 15 (fallthrough)
+       10:  141-block  4
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
 branch 14 taken 0 (throw)
-       15:  141-block  5
-call   15 returned 15
-branch 16 taken 15 (fallthrough)
+       10:  141-block  5
+call   15 returned 10
+branch 16 taken 10 (fallthrough)
 branch 17 taken 0 (throw)
-       15:  142:            << "}" << std::endl;
-       15:  142-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
+       10:  142:            << "}" << std::endl;
+       10:  142-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
-       15:  142-block  1
-call    3 returned 15
-branch  4 taken 15 (fallthrough)
+       10:  142-block  1
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
 branch  5 taken 0 (throw)
-       15:  142-block  2
-call    6 returned 15
-branch  7 taken 15 (fallthrough)
+       10:  142-block  2
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
 branch  8 taken 0 (throw)
-       15:  142-block  3
-call    9 returned 15
-branch 10 taken 15 (fallthrough)
+       10:  142-block  3
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
 branch 11 taken 0 (throw)
-       15:  142-block  4
-call   12 returned 15
-branch 13 taken 15 (fallthrough)
+       10:  142-block  4
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
 branch 14 taken 0 (throw)
-       15:  143:}
-       15:  143-block  0
-call    0 returned 15
-branch  1 taken 15 (fallthrough)
+       10:  143:}
+       10:  143-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
-       15:  143-block  1
+       10:  143-block  1
     $$$$$:  143-block  2
 call    3 never executed
         -:  144:
